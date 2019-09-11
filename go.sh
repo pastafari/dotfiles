@@ -50,17 +50,15 @@ function setup_emacs {
 }
 
 function setup_bash_profile {
-    cp ./bash_profile ~/
+    cp .bash_profile ~/
 }
 
 function setup_trueline {
-    pushd /usr/local/Cellar/
+    pushd /usr/local/Cellar/ > /dev/null
 
     ! [ -d "trueline" ] && git clone https://github.com/petobens/trueline
     
-    source ~/.bash_profile
-
-    popd
+    popd > /dev/null
 }
 
 # Install Homebrew
@@ -90,4 +88,4 @@ info "Setting up Emacs"
 setup_emacs
 
 
-info "Done"
+info "Done. Restart iTerm for best results!"
