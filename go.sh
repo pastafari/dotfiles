@@ -9,11 +9,15 @@ function install_dev_essentials {
 }
 
 function setup_emacs {
-    cd ~/
-    "Cloning"
+    # Change to ~ to clone emacs.d
+    pushd ~/
+
     git clone git@github.com:pastafari/prelude.git .emacs.d
     cd .emacs.d
     git checkout pastafari
+
+    # Change back to where we were before
+    popd
 }
 
 # Install Homebrew
@@ -27,3 +31,4 @@ install_dev_essentials
 # Set up Emacs
 echo "Setting up Emacs"
 setup_emacs
+
