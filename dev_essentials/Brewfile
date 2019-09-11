@@ -1,6 +1,8 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
+tap "homebrew/cask-fonts"
 brew "bash"
 brew "git"
 cask "emacs"
+cask "font-hack-nerd-font"

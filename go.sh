@@ -49,6 +49,20 @@ function setup_emacs {
     popd > /dev/null
 }
 
+function setup_bashrc {
+    cp ./bashrc ~/
+}
+
+function setup_trueline {
+    pushd /usr/local/Cellar/
+
+    ! [ -d "trueline" ] && git clone https://github.com/petobens/trueline
+    
+    source ~/.bashrc
+
+    popd
+}
+
 # Install Homebrew
 info "Installing Homebrew"
 install_homebrew
@@ -56,6 +70,14 @@ install_homebrew
 # Install dev essentials defined in dev_essentials/Brewfile
 info "Installing dev essentials"
 install_dev_essentials
+
+# Setup .bashrc
+info "Setting up bashrc"
+setup_bashrc
+
+# Set up Bash
+info "Setting up Bash with trueline"
+setup_trueline
 
 # Set up Emacs
 info "Setting up Emacs"
