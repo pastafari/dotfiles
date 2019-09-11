@@ -87,5 +87,6 @@ setup_trueline
 info "Setting up Emacs"
 setup_emacs
 
+info "Remember to setup secrets in ~/.profile, for e.g HOMEBREW_GITHUB_API_TOKEN"
 
 info "Done. Restart iTerm for best results!"
