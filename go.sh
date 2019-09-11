@@ -49,8 +49,8 @@ function setup_emacs {
     popd > /dev/null
 }
 
-function setup_bashrc {
-    cp ./bashrc ~/
+function setup_bash_profile {
+    cp ./bash_profile ~/
 }
 
 function setup_trueline {
@@ -58,7 +58,7 @@ function setup_trueline {
 
     ! [ -d "trueline" ] && git clone https://github.com/petobens/trueline
     
-    source ~/.bashrc
+    source ~/.bash_profile
 
     popd
 }
@@ -71,9 +71,15 @@ install_homebrew
 info "Installing dev essentials"
 install_dev_essentials
 
-# Setup .bashrc
-info "Setting up bashrc"
-setup_bashrc
+# Switch to iterm?
+info "Dev essentials are setup"
+info "Do you want to stop now and switch to iterm2? [y|n]"
+read answer
+[[ "$answer" == "y" ]] && exit 0
+
+# Setup .bash_profile
+info "Setting up bash_profile"
+setup_bash_profile
 
 # Set up Bash
 info "Setting up Bash with trueline"
