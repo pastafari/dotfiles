@@ -51,6 +51,7 @@ function setup_emacs {
 
 function setup_bash_profile {
     cp .bash_profile ~/
+    source ~/.bash_profile
 }
 
 function setup_trueline {
