@@ -3,6 +3,7 @@
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 NO_COLOR='\033[0m'
+WORKING_DIRECTORY=$PWD
 
 function info {
     echo -e "${GREEN}$1${NO_COLOR}"
@@ -42,7 +43,7 @@ function setup_emacs {
     info "Cloning and setting up pastafari/prelude with branch pastafari"
 
     git clone git@github.com:pastafari/prelude.git .emacs.d
-    cd .emacs.d
+    pushd .emacs.d > /dev/null
     git checkout pastafari
 
     # Change back to where we were before
@@ -60,6 +61,11 @@ function setup_trueline {
     ! [ -d "trueline" ] && git clone https://github.com/petobens/trueline
     
     popd > /dev/null
+}
+
+function setup_clojure {
+    cd $WORKING_DIRECTORY
+    brew bundle install --file=./clojure/Brewfile
 }
 
 # Install Homebrew
@@ -87,6 +93,10 @@ setup_trueline
 # Set up Emacs
 info "Setting up Emacs"
 setup_emacs
+
+# Set up Clojure environment
+info "Setting up Clojure"
+setup_clojure
 
 info "Remember to setup secrets in ~/.profile, for e.g HOMEBREW_GITHUB_API_TOKEN"
 
