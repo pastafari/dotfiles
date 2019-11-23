@@ -10,6 +10,8 @@ source ~/.profile
 # pyenv
 eval "$(pyenv init -)"
 
+PATH=$(pyenv root)/shims:$PATH
+
 # Cowsay! Always last!
 fortune | cowsay
 
