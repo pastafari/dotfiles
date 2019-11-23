@@ -7,5 +7,9 @@ touch ~/.hushlogin
 # Setup secrets here!
 source ~/.profile
 
-# Cowsay!
+# pyenv
+eval "$(pyenv init -)"
+
+# Cowsay! Always last!
 fortune | cowsay
+

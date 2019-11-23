@@ -11,3 +11,5 @@ brew "ag"
 brew "fortune"
 brew "cowsay"
 brew "wget"
+brew "pyenv"
+
