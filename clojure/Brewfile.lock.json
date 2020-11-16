@@ -1,0 +1,48 @@
+{
+  "entries": {
+    "tap": {
+      "homebrew/bundle": {
+        "revision": "6debfdc6b453b7c62bad3fba4836ec24561fac73"
+      }
+    },
+    "brew": {
+      "clojure": {
+        "version": "1.10.1.727",
+        "bottle": false
+      },
+      "leiningen": {
+        "version": "2.9.4",
+        "bottle": {
+          "cellar": ":any_skip_relocation",
+          "prefix": "/usr/local",
+          "files": {
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/leiningen-2.9.4.catalina.bottle.tar.gz",
+              "sha256": "3e65cbf112fe60434c3b6f748342de048feeaa63f10da2e26721ce9e83dea081"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/leiningen-2.9.4.mojave.bottle.tar.gz",
+              "sha256": "3e65cbf112fe60434c3b6f748342de048feeaa63f10da2e26721ce9e83dea081"
+            },
+            "high_sierra": {
+              "url": "https://homebrew.bintray.com/bottles/leiningen-2.9.4.high_sierra.bottle.tar.gz",
+              "sha256": "3e65cbf112fe60434c3b6f748342de048feeaa63f10da2e26721ce9e83dea081"
+            }
+          }
+        }
+      }
+    }
+  },
+  "system": {
+    "macos": {
+      "catalina": {
+        "HOMEBREW_VERSION": "2.5.10",
+        "HOMEBREW_PREFIX": "/usr/local",
+        "Homebrew/homebrew-core": "16d15e3059d77b5c5d3c696076ec0173c522172a",
+        "CLT": "12.2.0.0.1.1604628099",
+        "Xcode": "12.0",
+        "macOS": "10.15.6"
+      }
+    }
+  }
+}
