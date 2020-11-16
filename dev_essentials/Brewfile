@@ -20,4 +20,5 @@ brew "heroku"
 cask "dropbox"
 cask "firefox"
 cask "slack"
-
+brew "node"
+brew "watchexec"
