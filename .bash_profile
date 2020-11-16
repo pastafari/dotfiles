@@ -12,6 +12,8 @@ eval "$(pyenv init -)"
 
 PATH=$(pyenv root)/shims:$PATH
 
+# direnv
+eval "$(direnv hook bash)"
+
 # Cowsay! Always last!
 fortune | cowsay
-
