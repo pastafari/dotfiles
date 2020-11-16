@@ -17,4 +17,7 @@ brew "bash-completion"
 brew "hugo"
 tap "heroku/brew"
 brew "heroku"
-brew "hugo"
+cask "dropbox"
+cask "firefox"
+cask "slack"
+
