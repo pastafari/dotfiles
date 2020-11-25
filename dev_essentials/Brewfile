@@ -24,3 +24,5 @@ brew "node"
 brew "nvm"
 brew "watchexec"
 brew "direnv"
+brew "markdown"
+

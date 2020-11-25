@@ -5,13 +5,13 @@
         "revision": "d1a530ada501e983aef2748411b947b8c5696ac9"
       },
       "homebrew/cask": {
-        "revision": "eb4fac071463aea57933755ce7db812c557c112e"
+        "revision": "ff908b09d77cb172a4f616e8f5218f30721fb5eb"
       },
       "homebrew/core": {
-        "revision": "51f981df4fb5cb0750291551424cfbb09343265c"
+        "revision": "47605cce7b4c91c9762bda7243392bcb48c5d951"
       },
       "homebrew/cask-fonts": {
-        "revision": "ea303129967f9074ad1c51260d5c80acc6e3b3d9"
+        "revision": "665dc41cc360c8e8b61f0d24890d42ea777655de"
       },
       "heroku/brew": {
         "revision": "4b3ead860620693ce05806086ed1d9e94e65ef9a"
@@ -295,22 +295,22 @@
         "bottle": false
       },
       "node": {
-        "version": "15.2.1",
+        "version": "15.3.0",
         "bottle": {
           "cellar": ":any",
           "prefix": "/usr/local",
           "files": {
             "big_sur": {
-              "url": "https://homebrew.bintray.com/bottles/node-15.2.1.big_sur.bottle.tar.gz",
-              "sha256": "a1943d277540cea6968b516535df3d81d6295d5997504044c59cb03d8a09d8c6"
+              "url": "https://homebrew.bintray.com/bottles/node-15.3.0.big_sur.bottle.tar.gz",
+              "sha256": "0b11ea4bbe2e656209419a9c74dd7e24e25405c4ba0323b4c34e3532dd15ac44"
             },
             "catalina": {
-              "url": "https://homebrew.bintray.com/bottles/node-15.2.1.catalina.bottle.tar.gz",
-              "sha256": "84f1c73b336d2bfd35c436f22ac4b7bfc4dfd15530edddfe82624b26f1855799"
+              "url": "https://homebrew.bintray.com/bottles/node-15.3.0.catalina.bottle.tar.gz",
+              "sha256": "3605db67bfb721a93c61060ef71984efda198ee2c9ad20c19d881a18c1a86879"
             },
             "mojave": {
-              "url": "https://homebrew.bintray.com/bottles/node-15.2.1.mojave.bottle.tar.gz",
-              "sha256": "d78af40b5bc055f46aec59c5d0f1d8b85860a7838ddc0cd187ae6b79a28a2649"
+              "url": "https://homebrew.bintray.com/bottles/node-15.3.0.mojave.bottle.tar.gz",
+              "sha256": "1be3495e7a8d8f748046de6cabd457d247a2e151c004245487d95e38dbfeedbb"
             }
           }
         }
@@ -368,6 +368,47 @@
       "nvm": {
         "version": "0.37.0",
         "bottle": false
+      },
+      "markdown": {
+        "version": "1.0.1",
+        "bottle": {
+          "cellar": ":any_skip_relocation",
+          "prefix": "/usr/local",
+          "files": {
+            "big_sur": {
+              "url": "https://homebrew.bintray.com/bottles/markdown-1.0.1.big_sur.bottle.tar.gz",
+              "sha256": "07611f1e774c865bfcd44ae2f153aff4f43a0c29dc848f30aeb1b117ae04a4a9"
+            },
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/markdown-1.0.1.catalina.bottle.tar.gz",
+              "sha256": "35864422386d1390de813462b697b604813bc3a7caac7bf3fd172335e25b2a55"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/markdown-1.0.1.mojave.bottle.tar.gz",
+              "sha256": "343d406a2a4838499afa96395733e0d61f91c725a4693e6c5b3c49293e5297e8"
+            },
+            "high_sierra": {
+              "url": "https://homebrew.bintray.com/bottles/markdown-1.0.1.high_sierra.bottle.tar.gz",
+              "sha256": "c7b43e96e9967731f9f9395152dca0d1535eb270a953aeccfe24dc99d3941f97"
+            },
+            "sierra": {
+              "url": "https://homebrew.bintray.com/bottles/markdown-1.0.1.sierra.bottle.tar.gz",
+              "sha256": "47715f7beb1f434a5d52e6977c7f6ad584be7b0d970dacb00ef5965bd162858d"
+            },
+            "el_capitan": {
+              "url": "https://homebrew.bintray.com/bottles/markdown-1.0.1.el_capitan.bottle.tar.gz",
+              "sha256": "a5b025bc09c8b274507cfc5c86da6350560477f24ce109dd5a79f2dafa97d805"
+            },
+            "yosemite": {
+              "url": "https://homebrew.bintray.com/bottles/markdown-1.0.1.yosemite.bottle.tar.gz",
+              "sha256": "5e1b8b5388f1b4ceefe3fae528ae83e2fa3f9ed9f27668e8faded36b9ec3274e"
+            },
+            "mavericks": {
+              "url": "https://homebrew.bintray.com/bottles/markdown-1.0.1.mavericks.bottle.tar.gz",
+              "sha256": "66fffda1a29fd9e2dcddcb52fb9606f21d897bf4680583626b612a95d27b1e04"
+            }
+          }
+        }
       }
     }
   },
@@ -376,7 +417,7 @@
       "catalina": {
         "HOMEBREW_VERSION": "2.5.11",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "51f981df4fb5cb0750291551424cfbb09343265c",
+        "Homebrew/homebrew-core": "47605cce7b4c91c9762bda7243392bcb48c5d951",
         "CLT": "12.2.0.0.1.1604628099",
         "Xcode": "12.0",
         "macOS": "10.15.6"
